@@ -1,0 +1,50 @@
+<ion-header>
+	<ion-toolbar>
+	  <ion-buttons slot="start">
+		<ion-back-button defaultHref=""></ion-back-button>
+	  </ion-buttons>
+	</ion-toolbar>
+  </ion-header>
+
+<ion-content class='background'>
+		<h1 class= "ion-text-center">ColisVoiturageTN</h1>
+		<h2 class= "ion-text-center">Profil</h2>
+		<ion-grid>
+			<ion-row>
+				<ion-col>
+					<ion-img class="vertical-align-content" src='./assets/dp.png'>
+					</ion-img>
+					
+			</ion-col>
+		</ion-row>
+		<ion-row><ion-col class="ion-text-center">
+				<a>Nous espèrons que vous allez bien ! </a>
+		<ion-card class="ion-text-center">
+			<a> {{ name }}</a>
+		</ion-card>
+	</ion-col></ion-row>
+		
+			<ion-row>
+				<ion-col class='ion-text-center'>
+				<a (click)='gotoeditprofile()'>Changer Mot de passe</a>
+			</ion-col>
+		</ion-row>
+			<ion-row>
+				<ion-col class='ion-text-center'>
+				<a (click)='driverRequest()'>Demande pour etre transporteur</a>
+			</ion-col>
+		</ion-row>
+			<ion-row>
+				<ion-col class='ion-text-center'>
+				<a  *ngIf="afAuth.auth.currentUser" (click)="signOut()">Deconnexion</a>
+			</ion-col>
+		</ion-row>
+	
+		<ion-row>
+			<ion-col class='ion-text-center'>
+				<a (click)="gotoreport()">Faire une Reclamation</a>
+			</ion-col>
+		</ion-row>	
+</ion-grid>
+
+</ion-content>

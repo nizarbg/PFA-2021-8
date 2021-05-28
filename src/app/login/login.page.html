@@ -1,0 +1,38 @@
+<ion-content class="background">
+		<h1 class= "ion-text-center">ColisVoiturageTN</h1>
+		<h2 class= "ion-text-center">Connexion</h2>
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<ion-item>
+				<ion-label position="floating">Mail</ion-label>
+				<ion-input type="text" [(ngModel)]="name"></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+				
+		<ion-row>
+			<ion-col>
+				<ion-item>
+				<ion-label position="floating">Mot de passe</ion-label>
+				<ion-input type="password" [(ngModel)]="password"></ion-input>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+		
+		<div class="right"> <ion-text (click)="forgotPassword()" color="white"><u>Mot de pase oublié?</u></ion-text></div>
+	  
+		<ion-row>
+			<ion-col>
+	  			<ion-button fill="outline" expand="block" color="dark" (click)="login()">Se connecter</ion-button>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+				<p> Vous n'avez pas une compte? 
+				<a (click)="goToRegister()">S'inscrire</a>
+				</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

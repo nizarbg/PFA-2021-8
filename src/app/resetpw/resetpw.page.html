@@ -1,0 +1,31 @@
+
+  <ion-content class="background">
+      <h1 class="ion-text-center">Modifier mot de passe</h1>
+    <div class="ion-padding">
+  
+  
+      <ion-grid>
+        <ion-row class="ion-text-center">
+          <ion-col>
+          <ion-label>mail addresse:</ion-label>
+        </ion-col>
+        </ion-row>
+  
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="username" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+  
+      
+    <ion-row>
+        <ion-col>
+          <ion-button expand="block" fill="outline" color="dark" class="font" (click)="forgotPassword()">Envoyez
+            Mot de passe reset</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </div>
+    </ion-content>

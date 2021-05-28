@@ -1,0 +1,101 @@
+<ion-header>
+	<ion-toolbar>
+	  <ion-buttons slot="start">
+		<ion-back-button></ion-back-button>
+	  </ion-buttons>
+	</ion-toolbar>
+</ion-header>
+  
+  <ion-content class="background">
+		<h1 class= "ion-text-center">ColisVoiturageTN</h1>
+		<h2 class= "ion-text-center">Inscription</h2>
+	  <ion-grid>
+		<ion-row>
+			<ion-col>
+		  		<ion-item>
+					<ion-label position="floating">Nom</ion-label>
+					<ion-input type="text" [(ngModel)]="Nom"></ion-input>
+				  </ion-item>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+		  		<ion-item>
+					<ion-label position="floating">Prénom</ion-label>
+					<ion-input type="text" [(ngModel)]="prenom"></ion-input>
+				  </ion-item>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+		  		<ion-item>
+					<ion-label position="floating">Mail</ion-label>
+					<ion-input type="text" [(ngModel)]="username"></ion-input>
+				  </ion-item>
+				  <ion-label position="floating" class="hint">exemple: username@gmail.com</ion-label>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<ion-col>
+		  		<ion-item>
+					<ion-label position="floating">Mot de passe</ion-label>
+					<ion-input type="password" [(ngModel)]="password"></ion-input>
+		  		</ion-item>
+			</ion-col>
+		</ion-row>
+		
+		<ion-row>
+			<ion-col>
+		  		<ion-item>
+					<ion-label position="floating">Confirmer Mot de passe</ion-label>
+					<ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+		  		</ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+				<ion-col>
+					  <ion-item>
+						<ion-label position="floating">Numero telephone</ion-label>
+						<ion-input type="text" [(ngModel)]="phoneno"></ion-input>
+					  </ion-item>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col>
+					  <ion-item>
+						<ion-label position="floating">CIN</ion-label>
+						<ion-input type="text" [(ngModel)]="CIN"></ion-input>
+					  </ion-item>
+				</ion-col>
+			</ion-row>
+		<ion-row>
+			<ion-col>
+				<ion-item>
+					<ion-label position="floating">Gouvernorat</ion-label>
+					<ion-select [(ngModel)]="gouv" name="gouv">
+					  <ion-select-option value="Tunis">Tunis</ion-select-option>
+					  <ion-select-option value="Sousse">Djerba</ion-select-option>
+					  <ion-select-option value="Sfax">Sfax</ion-select-option>
+					  <ion-select-option value="Nebeul">Gafsa</ion-select-option>
+					  <ion-select-option value="Bizerte">Bizerte</ion-select-option>
+					  <ion-select-option value="Kébili">Kébili</ion-select-option>
+					  <ion-select-option value="Gabes">Gabes</ion-select-option>
+					  <ion-select-option value="Béja">Béja</ion-select-option>
+					  <ion-select-option value="Kef">Elkef</ion-select-option>
+					  <ion-select-option value="Sousse">Sousse</ion-select-option>
+					</ion-select>
+				</ion-item>
+			</ion-col>
+		</ion-row>
+
+		<ion-row>
+			<ion-col>
+					<ion-button fill="outline" expand="block" color="dark" (click)='register()'>Register</ion-button>
+			</ion-col>
+		</ion-row>
+
+		</ion-grid>
+		
+		
+  </ion-content>
